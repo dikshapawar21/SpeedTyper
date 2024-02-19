@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(3, 25, 56, 0.8);
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+
+main{
+    position: absolute;
+    top: 30vh;
+    left: 36vw;
+    height: 20rem;
+    width: 30rem;
+    background-color: rgb(37, 52, 100);
+    box-shadow: 5px 5px 15px rgba(3, 25, 56, 0.8);
+    border-radius: 6px;
+    font-size: 30px;
+}

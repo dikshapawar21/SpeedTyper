@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Game</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <style>
+        body{
+            background-color: rgba(3, 25, 56, 0.8);
+            margin: 0px;
+            color: white;
+            text-align: center;
+        }
+        #difficulty{
+            height: 70px;
+            width: 100vw;
+            background-color: rgb(3, 25, 56);
+            padding: 20px 0px;
+            font-size: 20px;
+        }
+        select{
+            height: 30px;
+            width: 200px;
+            background-color: lightblue;
+        }
+        p{
+            background-color: rgb(3, 25, 56);
+            font-size: 30px;
+        }
+        main{
+            position: absolute;
+            top: 30vh;
+            left: 36vw;
+            height: 20rem;
+            width: 30rem;
+            background-color: rgb(37, 52, 100);
+            box-shadow: 5px 5px 15px rgba(3, 25, 56, 0.8);
+            border-radius: 6px;
+            font-size: 20px;
+        }
+        #result{
+            display: flex;
+            justify-content: space-around;
+        }
+        #word{
+            font-size: 20px;
+            background-color: rgb(37, 52, 100);
+        }
+    </style>
+
+</head>
+<body>
+    <div id="difficulty">Difficulty 
+        <select>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+    </div>
+    <main id="main">
+        <p>👨‍💻 Speed Typer 👨‍💻</p>
+        <div id="result">
+            <div id="time">Time left: </div>
+            <div id="score">Score: </div>
+        </div><br>
+        <div>
+            Type the following :
+            <p id="word" style="font-size: 30px;"></p>
+            <input type="text" placeholder="Type the word here..." style="height: 20px;">
+        </div>
+    </main>
+    <script src="speedtyper.js"></script>
+</body>
+</html>
